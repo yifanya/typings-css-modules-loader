@@ -4,4 +4,4 @@ this loader study from `typings-for-css-modules-loader` and `@teamsupercell/typi
 - `typings-for-css-modules-loader` is long time no maintenance.
 - I like `typings-for-css-modules-loader` instructions to replace `css-loader` and need't config.
 ### how to use
-npm i 
+options config is `css-loader` options.
