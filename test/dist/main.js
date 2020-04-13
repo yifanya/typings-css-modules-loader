@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "../node_modules/css-loader/dist/runtime/api.js":
-/*!******************************************************!*\
-  !*** ../node_modules/css-loader/dist/runtime/api.js ***!
-  \******************************************************/
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -188,45 +188,6 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
-
-/***/ }),
-
-/***/ "../src/log-loader.js!../src/typings-css-module-loader.js!./src/index.css":
-/*!********************************************************************************!*\
-  !*** ../src/log-loader.js!../src/typings-css-module-loader.js!./src/index.css ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".test {\n  font-size: 24px;\n}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
-/***/ "../src/log-loader.js!../src/typings-css-module-loader.js?!./src/index.m.css":
-/*!****************************************************************************************************!*\
-  !*** ../src/log-loader.js!../src/typings-css-module-loader.js??ref--5-oneOf-0-2!./src/index.m.css ***!
-  \****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, "._1lYd9fqDb1UmQ7HbkiqmA_ {\n  font-size: 24px;\n}", ""]);
-// Exports
-exports.locals = {
-	"mTest": "_1lYd9fqDb1UmQ7HbkiqmA_"
-};
-module.exports = exports;
-
 
 /***/ }),
 
@@ -510,6 +471,45 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./node_modules/typings-css-modules-loader/src/index.js!./src/index.css":
+/*!*********************************************************************!*\
+  !*** ./node_modules/typings-css-modules-loader/src!./src/index.css ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".test {\n  font-size: 24px;\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/typings-css-modules-loader/src/index.js?!./src/index.m.css":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/typings-css-modules-loader/src??ref--5-oneOf-0-1!./src/index.m.css ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "._1lYd9fqDb1UmQ7HbkiqmA_ {\n  font-size: 24px;\n}", ""]);
+// Exports
+exports.locals = {
+	"mTest": "_1lYd9fqDb1UmQ7HbkiqmA_"
+};
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./src/index.css":
 /*!***********************!*\
   !*** ./src/index.css ***!
@@ -518,7 +518,7 @@ module.exports = function (list, options) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../src/log-loader.js!../../src/typings-css-module-loader.js!./index.css */ "../src/log-loader.js!../src/typings-css-module-loader.js!./src/index.css");
+            var content = __webpack_require__(/*! !../node_modules/typings-css-modules-loader/src!./index.css */ "./node_modules/typings-css-modules-loader/src/index.js!./src/index.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -549,7 +549,7 @@ module.exports = exported;
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../src/log-loader.js!../../src/typings-css-module-loader.js??ref--5-oneOf-0-2!./index.m.css */ "../src/log-loader.js!../src/typings-css-module-loader.js?!./src/index.m.css");
+            var content = __webpack_require__(/*! !../node_modules/typings-css-modules-loader/src??ref--5-oneOf-0-1!./index.m.css */ "./node_modules/typings-css-modules-loader/src/index.js?!./src/index.m.css");
 
             content = content.__esModule ? content.default : content;
 

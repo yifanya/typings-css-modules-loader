@@ -1,8 +1,8 @@
 {
-  "name": "typeings-css-modules-loader",
-  "version": "1.0.0",
+  "name": "typings-css-modules-loader",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "debugger:chrome": "node --inspect --inspect-brk ./node_modules/.bin/webpack --config ./webpack.config.js"
   },

@@ -32,9 +32,8 @@ module.exports = {
             test: /\.m\.css$/,
             use: [
               "style-loader",
-              path.join(__dirname, "../src/log-loader"),
               {
-                loader: path.join(__dirname, "../src/typings-css-module-loader"),
+                loader: "typings-css-modules-loader",
                 options: {
                   modules: true
                 }
@@ -45,8 +44,7 @@ module.exports = {
             test: /\.css$/,
             use: [
               "style-loader",
-              path.join(__dirname, "../src/log-loader"),
-              path.join(__dirname, "../src/typings-css-module-loader")
+              "typings-css-modules-loader"
             ]
           },
         ]
